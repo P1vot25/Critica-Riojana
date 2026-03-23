@@ -10,10 +10,10 @@ search:
   preview_words_before: 5
   preview_words_after: 10
 
-logo: "/assets/images/logo-observatorio.png"  # subí una imagen simple (texto + escudo Rioja o lupa)
+logo: "/assets/images/logo-criticariojana.png" 
 
 aux_links:
-  Facebook: https://www.facebook.com/profile.php?id=61577670838127  # crea la page y pon link
+  Facebook: https://www.facebook.com/profile.php?id=61577670838127 
   GitHub: https://github.com/p1v0t25/observatorio-critica-riojana
 
 aux_links_new_tab: true
