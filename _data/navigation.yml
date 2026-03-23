@@ -1,0 +1,14 @@
+- title: Inicio
+  url: /
+- title: Categorías
+  children:
+    - title: Presupuesto
+      url: /categories/presupuesto/
+    - title: Sociales
+      url: /categories/sociales/
+    - title: Elecciones 2027
+      url: /categories/elecciones/
+    - title: Opiniones
+      url: /categories/opiniones/
+- title: Sobre
+  url: /sobre/
