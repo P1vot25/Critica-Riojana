@@ -1,36 +1,29 @@
 title: Crítica Riojana
-description: Análisis cenital e independiente de la dinámica política local. Datos, patrones y preguntas para el debate público.
+description: Análisis independiente y cenital de la política local en La Rioja. Datos, patrones y preguntas incómodas para el debate público.
 
-# Tema cenital (usa remote_theme para GitHub Pages sin instalar nada)
 remote_theme: just-the-docs/just-the-docs
-color_scheme: light                     # o dark si preferís
+color_scheme: light  # o 'dark' si preferís modo noche pro
 
-# Activa búsqueda interna (muy útil para funcionarios que buscan su nombre)
 search_enabled: true
-heading_anchors: true
+search:
+  previews: 5
+  preview_words_before: 5
+  preview_words_after: 10
 
-# RSS/feed automático (para Meta/FB)
+logo: "/assets/images/logo-observatorio.png"  # subí una imagen simple (texto + escudo Rioja o lupa)
+
+aux_links:
+  Facebook: https://www.facebook.com/profile.php?id=61577670838127  # crea la page y pon link
+  GitHub: https://github.com/p1v0t25/observatorio-critica-riojana
+
+aux_links_new_tab: true
+
+# Callouts para destacar preguntas
+callouts:
+  pregunta:
+    color: red
+    title: Pregunta abierta
+
+# RSS
 plugins:
   - jekyll-feed
-
-# Colección de posts (el diario)
-collections:
-  posts:
-    output: true                        # genera páginas individuales
-    permalink: /notas/:year/:month/:day/:title/   # URL limpia: /notas/2026/03/23/analisis-presupuesto/
-
-# Homepage ordena por fecha descendente
-defaults:
-  - scope:
-      path: "_posts"
-    values:
-      layout: post                      # o just-the-docs-default si querés sidebar
-      permalink: /notas/:year/:month/:day/:title/
-
-# Aux links (arriba derecha)
-aux_links:
-  GitHub: https://github.com/p1v0t25/observatorio-politico-[pueblo]
-  Contacto: mailto:tuemail@example.com
-
-# Opcional: navbar custom
-nav_enabled: true
