@@ -1,8 +1,36 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
-theme: just-the-docs
+title: Crítica Riojana
+description: Análisis cenital e independiente de la dinámica política local. Datos, patrones y preguntas para el debate público.
 
-url: https://just-the-docs.github.io
+# Tema cenital (usa remote_theme para GitHub Pages sin instalar nada)
+remote_theme: just-the-docs/just-the-docs
+color_scheme: light                     # o dark si preferís
 
+# Activa búsqueda interna (muy útil para funcionarios que buscan su nombre)
+search_enabled: true
+heading_anchors: true
+
+# RSS/feed automático (para Meta/FB)
+plugins:
+  - jekyll-feed
+
+# Colección de posts (el diario)
+collections:
+  posts:
+    output: true                        # genera páginas individuales
+    permalink: /notas/:year/:month/:day/:title/   # URL limpia: /notas/2026/03/23/analisis-presupuesto/
+
+# Homepage ordena por fecha descendente
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: post                      # o just-the-docs-default si querés sidebar
+      permalink: /notas/:year/:month/:day/:title/
+
+# Aux links (arriba derecha)
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  GitHub: https://github.com/p1v0t25/observatorio-politico-[pueblo]
+  Contacto: mailto:tuemail@example.com
+
+# Opcional: navbar custom
+nav_enabled: true
